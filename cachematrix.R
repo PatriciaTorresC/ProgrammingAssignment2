@@ -31,7 +31,7 @@ cacheSolve <- function(x, ...) {
   ## Test if the matrix has inverse
   mat <- x$get()
   if(det(mat)==0){
-    return("The matrix doesn't have determinant. Please change the input.")
+    return("The matrix doesn't have determinant. Please, change the input.")
   }
   Inv <- solve(mat, ...)                                #getting the inverse
   x$setInverse(Inv)
